@@ -3,9 +3,10 @@ const app = express()
 
 
 require('dotenv').config()
+require("./db")
 
 
-const port = process.env.PORT || 4000
+const port = process.env.PORT || 4000;
 
 
 app.listen(port, () => {
